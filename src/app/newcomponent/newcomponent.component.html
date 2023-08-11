@@ -1,7 +1,7 @@
 <h1>
     Example Form Validation
 </h1>
-<p>Please fill all mandatory fields to enable submit</p>
+<p appBlueDirective >Please fill all mandatory fields to enable submit</p>
 <!-- <div class="container-fluid p-5 bg-primary text-white text-center">
     <h1>My First Bootstrap Page</h1>
     <p>Resize this responsive page to see the effect!</p>
@@ -12,7 +12,7 @@
         <form [formGroup]="form" class="example-form" (ngSubmit)="onSubmit()">
             <mat-form-field class="example-full-width">
                 <mat-label>Name</mat-label>
-                <input matInput formControlName="name" required>
+                <input  matInput formControlName="name" required>
                 <div *ngIf="form.get('name')?.invalid && (form.get('name')?.dirty || form.get('name')?.touched)" class="invalid-feedback">
                     <div *ngIf="form.get('name')!.errors!['required']">Name is required</div>
                 </div>
@@ -68,7 +68,7 @@
         <table class="table">
           <thead>
             <tr>
-              <th>Name</th>
+              <th  >Name</th>
               <th>Age</th>
               <th>Gender</th>
               <th>Date of Birth</th>
@@ -82,7 +82,7 @@
               <td>{{ rowData.name }} </td>
               <td>{{ rowData.age }}</td>
               <td>{{ rowData.gender }}</td>
-              <td>{{rowData.dob }}</td>
+              <td>{{rowData.dob | testpipe }}</td>
               <td>{{rowData.PhoneNumber }}</td>
               <td>{{ rowData.ContactNumber}}</td>
               <td (click)="onEdit(rowData.id)" > Edit </td>

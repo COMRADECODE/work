@@ -11,10 +11,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { ErrorStateMatcher, MatNativeDateModule, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { TestpipePipe } from './testpipe.pipe';
+import { BlueDirectiveDirective } from './blue-directive.directive';
+import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    NewcomponentComponent
+    NewcomponentComponent,
+    TestpipePipe,
+    BlueDirectiveDirective
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     ReactiveFormsModule
   ],
   providers: [
-    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},DatePipe
   ],
   bootstrap: [AppComponent]
 })
