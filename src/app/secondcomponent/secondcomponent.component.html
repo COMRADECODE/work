@@ -1,6 +1,28 @@
-<div class="container" style="background-color: blanchedalmond;">
-Test
-<div>
-    
-</div>
-</div>
+<div class="container">
+    <div >   
+      <button class="custom-btn" (click)="toggleDescription()" >
+        {{ jsonVariable[0].title }}
+      </button>
+      <div  class="des" *ngIf="shown1">
+        {{  jsonVariable[0].description }}
+      </div>
+      <button class="custom-btn" (click)="toggleDescription2()" >
+        {{ jsonVariable[1].title }}
+      </button>
+      <div  class="des"  *ngIf="shown2">
+        {{  jsonVariable[1].description }}
+      </div>
+      <div  class="des">
+      </div>
+      <button class="custom-btn" (click)="toggleDescription3()">
+        {{ jsonVariable[2].title }}
+      </button>
+      <div  class="des"  *ngIf="shown3">
+        {{  jsonVariable[2].description }}
+      </div>
+      <div  class="des">
+      </div>
+    </div>
+  
+  </div>
+  
