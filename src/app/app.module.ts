@@ -14,12 +14,14 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { TestpipePipe } from './testpipe.pipe';
 import { BlueDirectiveDirective } from './blue-directive.directive';
 import { DatePipe } from '@angular/common';
+import { SecondcomponentComponent } from './secondcomponent/secondcomponent.component';
 @NgModule({
   declarations: [
     AppComponent,
     NewcomponentComponent,
     TestpipePipe,
-    BlueDirectiveDirective
+    BlueDirectiveDirective,
+    SecondcomponentComponent
   ],
   imports: [
     BrowserModule,
