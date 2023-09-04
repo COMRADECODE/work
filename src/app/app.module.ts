@@ -15,13 +15,15 @@ import { TestpipePipe } from './testpipe.pipe';
 import { BlueDirectiveDirective } from './blue-directive.directive';
 import { DatePipe } from '@angular/common';
 import { SecondcomponentComponent } from './secondcomponent/secondcomponent.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     NewcomponentComponent,
     TestpipePipe,
     BlueDirectiveDirective,
-    SecondcomponentComponent
+    SecondcomponentComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
