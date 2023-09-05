@@ -1,11 +1,11 @@
+
+<div class="container-fluid" style="background-color: rgb(255 255 255);">
+  <div class="row">
+    <div class="col-md-12">
 <h1>
   Example Form Validation
 </h1>
 <p appBlueDirective>Please fill all mandatory fields to enable submit</p>
-<!-- <div class="container-fluid p-5 bg-primary text-white text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
-  </div> -->
 <div class="container" style="background-color: blanchedalmond;">
   <div class="row">
     <div class="col p-6">
@@ -68,33 +68,39 @@
       </div>
       <div class="container mt-3">
         <h2>Person Details</h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Age </th>
-              <th>Gender</th>
-              <th>Date of Birth</th>
-              <th>Phone Number</th>
-              <th>Mobile Number</th>
-              <th>Edit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let rowData of tableData">
-              <td>{{ rowData.name }} </td>
-              <td>{{ rowData.age }}</td>
-              <td>{{ rowData.gender }}</td>
-              <td>{{rowData.dob | testpipe }}</td>
-              <td>{{rowData.PhoneNumber }}</td>
-              <td>{{ rowData.ContactNumber}}</td>
-              <td (click)="onEdit(rowData.id)"> Edit </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Phone Number</th>
+                <th>Mobile Number</th>
+                <th>Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let rowData of tableData">
+                <td>{{ rowData.name }}</td>
+                <td>{{ rowData.age }}</td>
+                <td>{{ rowData.gender }}</td>
+                <td>{{ rowData.dob | testpipe }}</td>
+                <td>{{ rowData.PhoneNumber }}</td>
+                <td>{{ rowData.ContactNumber }}</td>
+                <td (click)="onEdit(rowData.id)">Edit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+      
 
     </div>
 
   </div>
+</div>
+</div>
+</div>
 </div>
