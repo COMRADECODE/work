@@ -79,6 +79,7 @@
                 <th>Phone Number</th>
                 <th>Mobile Number</th>
                 <th>Edit</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -90,6 +91,7 @@
                 <td>{{ rowData.PhoneNumber }}</td>
                 <td>{{ rowData.ContactNumber }}</td>
                 <td (click)="onEdit(rowData.id)">Edit</td>
+                <td (click)="onDelete(rowData.id)">Delete</td>
               </tr>
             </tbody>
           </table>

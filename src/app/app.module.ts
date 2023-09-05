@@ -16,6 +16,7 @@ import { BlueDirectiveDirective } from './blue-directive.directive';
 import { DatePipe } from '@angular/common';
 import { SecondcomponentComponent } from './secondcomponent/secondcomponent.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { HomeComponent } from './home/home.component';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher},DatePipe
